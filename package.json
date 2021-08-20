@@ -20,8 +20,10 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
+    "build-tailwind": "npx tailwindcss -i ./src/css/tailwind-config.css -o ./src/css/tailwind.css -w",
     "build-storybook": "build-storybook",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "dev": "run-p build-tailwind storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -37,6 +39,7 @@
     "babel-loader": "^8.2.2",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.1",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.3.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
