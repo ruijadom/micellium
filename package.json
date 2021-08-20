@@ -20,10 +20,11 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build-tailwind": "npx tailwindcss -i ./src/css/tailwind-config.css -o ./src/css/tailwind.css -w",
-    "build-storybook": "build-storybook",
+    "build-tailwind": "npx tailwindcss -i ./src/css/tailwind-config.css -o ./src/css/tailwind.css",
+    "build-tailwind:watch": "npx tailwindcss -i ./src/css/tailwind-config.css -o ./src/css/tailwind.css -w",
+    "build-storybook": "run-p build-tailwind build-storybook",
     "semantic-release": "semantic-release",
-    "dev": "run-p build-tailwind storybook"
+    "dev": "run-p build-tailwind:watch storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
