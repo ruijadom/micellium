@@ -23,7 +23,7 @@
     "build-tailwind": "npx tailwindcss -i ./src/css/tailwind-config.css -o ./src/css/tailwind.css",
     "build-tailwind:watch": "npx tailwindcss -i ./src/css/tailwind-config.css -o ./src/css/tailwind.css -w",
     "build-storybook": "run-p build-tailwind build-storybook",
-    "semantic-release": "semantic-release",
+    "semantic-release": "semantic-release --branches master",
     "dev": "run-p build-tailwind:watch storybook"
   },
   "devDependencies": {
