@@ -57,6 +57,7 @@
   "peerDependencies": {
     "react": ">=16"
   },
+  "homepage": "https://micellium.netlify.app/",
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
