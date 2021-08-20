@@ -1,3 +1,3 @@
 # Micellium
 
-Ui kit
+Ui kit build with react, typescript, storybook
