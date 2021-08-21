@@ -2,7 +2,9 @@ import '../../css/tailwind.css';
 
 import React from 'react';
 
-import { ITopbar } from './types';
+export interface ITopbar {
+  children?: React.ReactNode;
+}
 
 const Topbar = ({ children }: ITopbar) => {
   return (

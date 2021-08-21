@@ -1,6 +1,5 @@
 import React from 'react';
-import Topbar from '../src/components/Topbar';
-import { ITopbar } from '../src/components/Topbar/types';
+import Topbar, { ITopbar } from '../src/components/Topbar';
 
 export default {
   title: 'Topbar',
