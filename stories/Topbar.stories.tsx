@@ -8,7 +8,7 @@ export default {
 } as any;
 
 const Template = (props: ITopbar) => {
-  return <Topbar {...props}>Micellium</Topbar>;
+  return <Topbar {...props}>Micellium ui</Topbar>;
 };
 
 export const Default = Template.bind({});
