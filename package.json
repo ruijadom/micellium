@@ -22,7 +22,7 @@
     "storybook": "start-storybook -p 6006",
     "build-tailwind": "npx tailwindcss -i ./src/css/tailwind-config.css -o ./src/css/tailwind.css",
     "build-tailwind:watch": "npx tailwindcss -i ./src/css/tailwind-config.css -o ./src/css/tailwind.css -w",
-    "build-storybook": "run-p build-tailwind build-storybook",
+    "build-storybook": "build-storybook",
     "semantic-release": "semantic-release",
     "dev": "run-p build-tailwind:watch storybook"
   },
